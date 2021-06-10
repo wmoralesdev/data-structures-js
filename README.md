@@ -10,7 +10,7 @@ of Data Structures, Sorting/Searching Algorithms and Dynamic Programming for edu
 <br/>
 
 ## Data Structures
----
+
 `E` - Easy, `M` - Medium, `H` - Hard, `V` - Very hard
 
 - `E` Linked List
@@ -21,14 +21,17 @@ of Data Structures, Sorting/Searching Algorithms and Dynamic Programming for edu
 - `H` Binary Search Tree
 - `V` Red Black Tree
 
+&nbsp;
 ## Searching Algorithms
----
+
 
 - LinearSearch `O(n)` 
 - Binary Search `O(log n)`
 
+&nbsp;
+
 ## Sorting Algorithms
----
+
 - MergeSort 
 `O(n log n)`
 
