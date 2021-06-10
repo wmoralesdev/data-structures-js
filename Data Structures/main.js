@@ -1,10 +1,10 @@
-import Queue from "./Data Structures/Queue/main.js";
-import Stack from "./Data Structures/Stack/main.js";
-import MinHeap from "./Data Structures/Heap/MinHeap.js";
-import HashTable from "./Data Structures/HashTable/main.js"
-import LinkedList from "./Data Structures/LinkedList/main.js";
-import RedBlackTree from "./Data Structures/Red Black Tree/main.js";
-import BinarySearchTree from "./Data Structures/Binary Search Tree/main.js";
+import Queue from "./Queue/main.js";
+import Stack from "./Stack/main.js";
+import MinHeap from "./Heap/MinHeap.js";
+import HashTable from "./HashTable/main.js"
+import LinkedList from "./LinkedList/main.js";
+import RedBlackTree from "./Red Black Tree/main.js";
+import BinarySearchTree from "./Binary Search Tree/main.js";
 
 var list = new LinkedList();
 list.append(5);
