@@ -1,43 +1,33 @@
 import { performance } from 'perf_hooks'
 
-var recursionTimes = 0;
-
 export default class QuickSort {
-    constructor(array) {
-        this.array = array
-    }
-
-    quickSort(arr, start, end) {
-        recursionTimes++
-
+    quickSort(array, start, end) {
         if (start >= end) {
             return;
         }
         
-        let index = this.partition(arr, start, end);
+        let index = this.partition(array, start, end);
         
-        this.quickSort(arr, start, index - 1);
-        this.quickSort(arr, index + 1, end);
+        this.quickSort(array, start, index - 1);
+        this.quickSort(array, index + 1, end);
     }
 
-    partition(arr, start, end){
-        const pivotValue = arr[end];
+    partition(array, start, end){
+        const pivotValue = array[end];
         let pivotIndex = start; 
         for (let i = start; i < end; i++) {
-            if (arr[i] < pivotValue) {
-            [arr[i], arr[pivotIndex]] = [arr[pivotIndex], arr[i]];
+            if (array[i] < pivotValue) {
+            [array[i], array[pivotIndex]] = [array[pivotIndex], array[i]];
 
             pivotIndex++;
             }
         }
         
-        [arr[pivotIndex], arr[end]] = [arr[end], arr[pivotIndex]] 
+        [array[pivotIndex], array[end]] = [array[end], array[pivotIndex]] 
         return pivotIndex;
     }
 
     quickSortWithPerformance(array) {
-        recursionTimes = 0
-
         var obj = { original: [...array] }
         
         var t0 = performance.now()

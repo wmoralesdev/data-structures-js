@@ -1,13 +1,9 @@
 import { performance } from 'perf_hooks'
 
-var recursionTimes = 0;
-
 export default class HeapSort {
     arrayLength = 0
 
-    heapRoot(array, i) {
-        recursionTimes ++;
-
+    maxHeapify(array, i) {
         var left = 2 * i + 1;
         var right = 2 * i + 2;
         var max = i;
@@ -22,7 +18,7 @@ export default class HeapSort {
 
         if (max != i) {
             this.swap(array, i, max);
-            this.heapRoot(array, max);
+            this.maxHeapify(array, max);
         }
     }
 
@@ -37,7 +33,7 @@ export default class HeapSort {
         this.arrayLength = array.length;
 
         for (var i = Math.floor(this.arrayLength / 2); i >= 0; i -= 1) {
-            this.heapRoot(array, i);
+            this.maxHeapify(array, i);
         }
 
         for (i = array.length - 1; i > 0; i--) {
@@ -45,13 +41,11 @@ export default class HeapSort {
             this.arrayLength--;
 
 
-            this.heapRoot(array, 0);
+            this.maxHeapify(array, 0);
         }
     }
 
     heapSortWithPerformance(array) {
-        recursionTimes = 0
-
         var obj = { original: [...array] }
         
         var t0 = performance.now()

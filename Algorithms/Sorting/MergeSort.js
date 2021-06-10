@@ -1,11 +1,7 @@
 import { performance } from 'perf_hooks'
 
-var recursionTimes = 0;
-
 export default class MergeSort {
     mergeSort(array) {
-        recursionTimes++
-    
         if(array.length <= 1)
             return array;
     
@@ -30,8 +26,6 @@ export default class MergeSort {
     }
 
     mergeSortWithPerformance(array) {
-        recursionTimes = 0
-
         var obj = { original: [...array] }
         
         var t0 = performance.now()
