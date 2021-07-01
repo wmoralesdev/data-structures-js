@@ -13,7 +13,7 @@ var n = 45
 
 // Get performance of rec fibo
 var t0 = performance.now()
-console.log(`Recursive fib: ${fib(n - 1)}`)
+console.log(`Recursive fib: ${fib(n)}`)
 var t1 = performance.now()
 console.log(`Took ${t1 - t0} ms\n`)
 
@@ -22,15 +22,15 @@ console.log(`Took ${t1 - t0} ms\n`)
 var t0 = performance.now()
 
 // DS creation
-var array = new Array(n).fill(null)
+var array = new Array(n + 1).fill(null)
 
 // Base case
 array[0] = array[1] = 1
 
 // Recursion to Iteration
-for(let i = 2; i < n; i++)
+for(let i = 2; i <= n; i++)
     array[i] = array[i - 1] + array[i - 2]
 
-console.log(`Dynamic fibo: ${array[n - 1]}`)
+console.log(`Dynamic fibo: ${array[n]}`)
 var t1 = performance.now()
 console.log(`Took ${t1 - t0} ms\n`)
