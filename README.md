@@ -4,6 +4,8 @@
 
 ![](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fwmoralesdev%2Ffaf7016436f449a37375448279fe8b42%2Fraw%2F3298184ae61e6116f26d540fe26a2403fcbf694f%2Felaniin2.json)
 
+![](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fwmoralesdev%2Faa94003f5b77c5c84867edb6fba43c53%2Fraw%2Fa0765238599e6bb1abb13fb40ea4ec121a3f5d59%2Felaniin3.json)
+
 This repository contains JavaScript based implementations of general manipulation
 of Data Structures, Sorting/Searching Algorithms and Dynamic Programming for educational purposes.
 
@@ -40,3 +42,9 @@ of Data Structures, Sorting/Searching Algorithms and Dynamic Programming for edu
 
 - QuickSort 
 `Best Implementation O(log n), Original Implementation O(n^2), Avergage Implementation (Expected) O(log n)`
+
+&nbsp;
+
+## Dynamic Programming
+- Getting Started with Fibonacci
+- Minimum Coin Change
