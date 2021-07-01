@@ -6,19 +6,19 @@ import LinkedList from "./LinkedList/main.js";
 import RedBlackTree from "./Red Black Tree/main.js";
 import BinarySearchTree from "./Binary Search Tree/main.js";
 
-var list = new LinkedList();
-list.append(5);
-list.append(6);
-list.append(7);
-list.append(8);
-list.append(9);
-list.prepend(4);
-list.prepend(3);
-list.prepend(2);
-list.prepend(1);
+var linkedList = new LinkedList();
+linkedList.append(5);
+linkedList.append(6);
+linkedList.append(7);
+linkedList.append(8);
+linkedList.append(9);
+linkedList.prepend(4);
+linkedList.prepend(3);
+linkedList.prepend(2);
+linkedList.prepend(1);
 
 console.group("LinkedList");
-console.log(list.toString() + "\n");
+console.log(linkedList.toString() + "\n");
 console.groupEnd();
 
 var queue = new Queue();
